@@ -1,0 +1,15 @@
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+
+*.pyc 
+
+*/__pycache__
+**/__pycache__/**
+!**/__pycache__
+.vscode/
+venv/
+.git/
+db.sqlite3
+nohup.out
+

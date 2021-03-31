@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "fa6660c2-cb00-478c-9ced-642e0436b041",
+		"name": "RydaroundPostmanCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ticket",
+			"item": [
+				{
+					"name": "List All Tickets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://198.199.88.65:8000/user/tickets/",
+							"protocol": "http",
+							"host": [
+								"198",
+								"199",
+								"88",
+								"65"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"tickets",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Ticket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"owner_id\": 2,\n    \"ticket_number\": \"1\",\n    \"airline_name\": \"Air Line 1\",\n    \"airline_iata_code\": \"iata 1\",\n    \"airline_icao_code\": \"icao 1\",\n    \"flight_number\": \"1\",\n    \"departure_airport\": \"DA 1\",\n    \"arrival_airport\": \"AA 1\",\n    \"departure_date\": \"2021-03-19\",\n    \"departure_time\": \"12:00\",\n    \"arrival_date\": \"2021-03-21\",\n    \"arrival_time\": \"13:30\",\n    \"check_in_status\": \"Checked\",\n    \"check_luggage\": \"Checked\",\n    \"forecast_provided\": \"true\",\n    \"trip_reason\": \"Bussiness\",\n    \"time_stamp\": \"2021-03-19 12:30\",\n    \"trip_detail\": {\n        \"arrival_pickup_location\": \"APL 1\",\n        \"arrival_transfer_type\": \"ATT 1\",\n        \"arrival_transfer_status\": \"ATS 1\",\n        \"arrival_transfer_booked\": \"ATB 1\",\n        \"arrival_transfer_eta\": \"2021-03-19 12:30\",\n        \"departure_dropoff_location\": \"DDL 1\",\n        \"departure_transfer_type\": \"DTT 1\",\n        \"departure_transfer_booked\": \"DTB 1\",\n        \"departure_transfer_status\": \"DTS 1\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://198.199.88.65:8000/user/tickets/",
+							"protocol": "http",
+							"host": [
+								"198",
+								"199",
+								"88",
+								"65"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"tickets",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ticket Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://198.199.88.65:8000/user/ticket_detail/1/",
+							"protocol": "http",
+							"host": [
+								"198",
+								"199",
+								"88",
+								"65"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"ticket_detail",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ticket By User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://198.199.88.65:8000/user/user_tickets_list/2/",
+							"protocol": "http",
+							"host": [
+								"198",
+								"199",
+								"88",
+								"65"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"user_tickets_list",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ticket Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://198.199.88.65:8000/user/tickets/1/",
+							"protocol": "http",
+							"host": [
+								"198",
+								"199",
+								"88",
+								"65"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"tickets",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ticket Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"airline_name\": \"Air Line 3\",\n    \"airline_iata_code\": \"iata 3\",\n    \"airline_icao_code\": \"icao 3\",\n    \"flight_number\": \"3\",\n    \"departure_airport\": \"DA 3\",\n    \"arrival_airport\": \"AA 3\",\n    \"departure_date\": \"2021-03-19\",\n    \"departure_time\": \"12:00\",\n    \"arrival_date\": \"2021-03-21\",\n    \"arrival_time\": \"13:30\",\n    \"check_in_status\": \"Checked\",\n    \"check_luggage\": \"Checked\",\n    \"forecast_provided\": \"true\",\n    \"trip_reason\": \"Bussiness\",\n    \"time_stamp\": \"2021-03-19 12:30\",\n    \"trip_detail\": {\n        \"arrival_pickup_location\": \"APL 3\",\n        \"arrival_transfer_type\": \"ATT 3\",\n        \"arrival_transfer_status\": \"ATS 3\",\n        \"arrival_transfer_booked\": \"ATB 3\",\n        \"arrival_transfer_eta\": \"2021-03-19 12:30\",\n        \"departure_dropoff_location\": \"DDL 3\",\n        \"departure_transfer_type\": \"DTT 3\",\n        \"departure_transfer_booked\": \"DTB 3\",\n        \"departure_transfer_status\": \"DTS 3\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://198.199.88.65:8000/user/tickets/1/",
+							"protocol": "http",
+							"host": [
+								"198",
+								"199",
+								"88",
+								"65"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"tickets",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Basic APIs",
+			"item": [
+				{
+					"name": "user registration ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Ravi\",\n    \"last_name\": \"Kansal\",\n    \"middle_name\": \"Shanky\",\n    \"email\" : \"user2@mail.com\",\n    \"phone_number\": \"+911234567890\",\n    \"password\": \"password@12\",\n    \"confirm_password\": \"password@12\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://198.199.88.65:8000/user/registration/",
+							"protocol": "http",
+							"host": [
+								"198",
+								"199",
+								"88",
+								"65"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"registration",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"user2@mail.com\",\n    \"password\": \"password@12\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://198.199.88.65:8000/user/login/",
+							"protocol": "http",
+							"host": [
+								"198",
+								"199",
+								"88",
+								"65"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token d27649b9de87c638359f5af96868816747bac39f",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://198.199.88.65:8000/user/logout/",
+							"protocol": "http",
+							"host": [
+								"198",
+								"199",
+								"88",
+								"65"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"logout",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Tickets List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://198.199.88.65:8000/user/user_tickets_list/2/",
+							"protocol": "http",
+							"host": [
+								"198",
+								"199",
+								"88",
+								"65"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"user_tickets_list",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detail By Departure Airport and Check In Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://198.199.88.65:8000/user/user_info_by_departure_airport_and_check_in_status/DA 1/Checked/",
+							"protocol": "http",
+							"host": [
+								"198",
+								"199",
+								"88",
+								"65"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"user_info_by_departure_airport_and_check_in_status",
+								"DA 1",
+								"Checked",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

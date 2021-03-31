@@ -1,0 +1,32 @@
+[
+{
+    "model": "authapp.myuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$xcsc0KJWYwue$Aj+K1BXuAF+0YbyA+kfWI2kNbrfJz2udOyYMCTPlq7U=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "iamadmin",
+        "first_name": "",
+        "last_name": "",
+        "email": "iamadmin@mail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-03-24T11:11:53.056Z",
+        "middle_name": "",
+        "additional_email_1": null,
+        "additional_email_2": null,
+        "additional_email_3": null,
+        "phone_number": "",
+        "additional_phone_number_1": "",
+        "additional_phone_number_2": "",
+        "additional_phone_number_3": "",
+        "reference_destination_account": null,
+        "alias_destination_account": null,
+        "current_time": "2021-03-24T11:11:53.189Z",
+        "current_location": "",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
